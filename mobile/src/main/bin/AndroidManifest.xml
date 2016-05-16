@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.alert"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.alert.PassWordActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity 
+            android:name=".ChangePWActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity 
+            android:name=".ChangeAlarmActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity 
+            android:name=".PhoneActivity"
+            android:label="@string/app_name">
+        </activity> 
+        <receiver android:name =".Broadcast">
+		    <intent-filter android:priority="9999">
+		        <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+		    </intent-filter>
+		</receiver>   
+		<service android:name=".Sound">
+		    <intent-filter >
+		        <action android:name="com.example.alert"/>
+		        <category android:name="android.intent.category.DEFAULT"/>
+		    </intent-filter>
+		</service>
+    </application>   
+    
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+</manifest>

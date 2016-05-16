@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text=" - 이 앱은 웨어러블 기기 G Watch와 연동되도록 설정되어 있습니다. 웨어러블 앱을 실행하면 경보기가 울리며 지정된 번호로 문자가 전송됩니다.\n - 웨어러블 기기가 없을 경우에는 스마트폰의 경보기 이미지를 터치하면 경보기가 울리게 됩니다.\n - 경보기를 끄기 위해서는 비밀번호를 풀어야만 합니다.\n\n ※ 주의\n - 초기 설정시 꼭 비밀번호와 힌트를 변경해주시기 바랍니다.\n - 문자에 위치를 보내기 위해서는 네트워크와 GPS을 반드시 켜주시기 바랍니다.\n - 웨어와 연동하기 위해서는 호스트앱을 설치한 후 블루투스로 연결해주시기 바랍니다."
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="\n\n Developed by"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text=" 단국대학교 2015 창업동아리 Wearoid 개발 1팀(나지윤 안나영 유민정 한희재)\n 지도교수 이재동\n 책임교수 이원진\n 대표 최건희"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/buttonOK_Dialog_Intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/line_button"
+                android:text="확인"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
