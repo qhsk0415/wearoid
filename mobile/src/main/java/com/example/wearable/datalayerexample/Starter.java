@@ -16,11 +16,7 @@ public class Starter extends BroadcastReceiver {
               if(action.equals("android.intent.action.BOOT_COMPLETED")) {
                        Intent i = new Intent(context, ServiceClass.class);
 
-          //      i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                    context.startService(i);
-              //   intent.setAction(Intent.ACTION_MAIN);
-            //      intent.addCategory(Intent.CATEGORY_HOME);
-
                }
          }
 }
